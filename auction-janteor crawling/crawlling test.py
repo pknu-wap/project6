@@ -58,92 +58,19 @@ get_info(ids, pws, que)
 
 
 
-# In[56]:
+# In[17]:
 
 
-from urllib.request import urlopen
-from bs4 import BeautifulSoup
-from selenium import webdriver
-import time
-import pandas as pd
-
-def get_info(item):
-    res_lis = []
-    a_url = []
-    driver = webdriver.Chrome('/Users/wonseok/Downloads/chromedriver')
-    driver.get('http://corners.auction.co.kr/corner/UsedMarketList.aspx' + '?keyword=' + item)
-    html = driver.page_source
-    bsobj = BeautifulSoup(html, 'html.parser')
-    page = bsobj.find('div', {'class':'page'}).text
-    page_number = page.split('/')
-    page_max = page_number[1]
-    for i in range(1, int(page_max)):
-        time.sleep(1)
-        driver.find_element_by_css_selector('#ucPager_dListMoreView > a').click()
-    html = driver.page_source
-    bsobj = BeautifulSoup(html, 'html.parser')
-    divs = bsobj.find_all('div', {'class':'list_view'})
-    for div in divs:
-        a_link = div.find('a')['href']
-        a_url.append(a_link)
-    for a in a_url:
-        num_of_pagedowns = 10
-        driver.get(a)
-        body = driver.find_element_by_tag_name('body')
-        while num_of_pagedowns:
-            body.send_keys(Keys.PAGE_DOWN)
-            time.sleep(0.3)
-            num_of_pagedowns -= 1
-        html = driver.page_source
-        bsobj = BeautifulSoup(html, 'html.parser')
-        div_date = bsobj.find('div', {'class':'seller_update'})
-        try:
-            if(bsobj.find('span', {'id':'spanNewDescriptionLastUpdate'})):
-                date = bsobj.find('span', {'id':'spanNewDescriptionLastUpdate'}).text
-            else:
-                date = 'NONE'
-            div_item = bsobj.find('div', {'class':'detail'})
-            if(div_item.find('h2', {'id':'hdivltemTitle'})):
-                title = div_item.find('h2').text
-            else:
-                title = 'NONE'
-            url_item = div_item.find('a')['href']
-            if(bsobj.find('span', {'class':'present_num'})):
-                price = bsobj.find('span', {'class':'present_num'})
-            else:
-                price = 'NONE'
-            if(div.find('span', {'class':'num_thm'})):
-                del_fee = div.find('div', {'class':'num_thm'}).text
-            else:
-                del_fee = '무료 배송'
-        except: #중고장터에서 옥션등으로 옮겨졌을때
-            title = 'NONE'
-            date = 'NONE'
-            price = 'NONE'
-            del_fee = 'NONE'
-        res_lis.append({'title':title, 'price':price, 'delivery fee':del_fee, 'date':date, 'url':url_item})
-    jangteor = pd.DataFrame(res_lis)
-    jangteor.to_csv('jangteor_crawling.csv', mode='w', index=False)
-
-item = input('검색할 물품를 입력하세요: ')
-get_info(item)
-div_date = bsobj.find('div', {'class':'seller_update'})
-
-
-# In[67]:
-
-
-#중고장터 검색어 크롤러, Date를 리스트에 보기 좋게 저장할 방법 강구해야 함
 #물건 링크가 옥션, 경매 등 다양하게 있어서 사이트에 따른 파서를 만들거나
-#이 소스코드에서 사용한 바와 같이 최종수정일만 링크가 중고장터인 것만 뽑음
+#이 소스코드에서는 최종수정일만 링크가 중고장터인 것만 뽑음
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 import time
 import pandas as pd
 
 def get_info(item):
     res_lis = []
-    a_url = []
     driver = webdriver.Chrome('/Users/wonseok/Downloads/chromedriver')
     driver.get('http://corners.auction.co.kr/corner/UsedMarketList.aspx' + '?keyword=' + item)
     html = driver.page_source
@@ -161,8 +88,6 @@ def get_info(item):
     bsobj = BeautifulSoup(html, 'html.parser')
     divs = bsobj.find_all('div', {'class':'list_view'})
     for div in divs: #제목, 가격, 배송비, url 뽑기
-        a_link = div.find('a')['href']
-        a_url.append(a_link)
         div_item = div.find('div', {'class':'item_title type1'})
         title = div_item.find('a').text
         url_item = div_item.find('a')['href']
@@ -172,14 +97,13 @@ def get_info(item):
             del_fee = div.find('div', {'class':'icon ic_delivery'}).text
         else:
             del_fee = '무료 배송'
-        res_lis.append({'title':title, 'price':price, 'delivery fee':del_fee, 'url':url_item})    
-    for a in a_url: #최종수정일 뽑기
+        a_link = div.find('a')['href']
         num_of_pagedowns = 5
-        driver.get(a)
+        driver.get(a_link)
         body = driver.find_element_by_tag_name('body')
         while num_of_pagedowns: #스크롤이 내려간 이벤트 후, 정보가 불러와지기 때문에 스크롤을 내림
             body.send_keys(Keys.PAGE_DOWN)
-            time.sleep(0.3)
+            time.sleep(0.1)
             num_of_pagedowns -= 1
         html = driver.page_source
         bsobj = BeautifulSoup(html, 'html.parser')
@@ -188,11 +112,10 @@ def get_info(item):
             date = bsobj.find('span', {'id':'spanNewDescriptionLastUpdate'}).text
         except:
             date = 'NONE'
-        res_lis.append({'date':date})
+        res_lis.append({'title':title, 'price':price, 'delivery fee':del_fee, 'url':url_item, 'date':date})    
     jangteor = pd.DataFrame(res_lis)
-    jangteor.to_csv('jangteor_crawling.csv', mode='w', index=False) #jangteor_crawling.csv 파일에 쓰기 모드로 저장, 추가모드 고려
-
-item = input('검색할 물품를 입력하세요: ') #인코딩 적용 필요
+    jangteor.to_csv('jangteor_crawling.csv', mode='w', index=False)
+item = input('검색할 물품을 입력하세요: ')
 get_info(item)
 
 

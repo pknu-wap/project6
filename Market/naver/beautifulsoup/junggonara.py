@@ -51,6 +51,7 @@ class Junggonara:
                 soup2 = BeautifulSoup(html2, 'html.parser')
                 self.paste_to_csv(i, idx, 1, soup2.select('.price'))
                 self.paste_to_csv(i, idx, 2, soup2.select('.board_time span'))
+                self.worksheet.write(20 * i + idx, 3, article_url)
                 idx += 1
 
 
@@ -63,6 +64,8 @@ worksheet = workbook.add_sheet('중고나라')
 worksheet.write(0, 0, '글 제목')
 worksheet.write(0, 1, '가격')
 worksheet.write(0, 2, '올린 시간')
+worksheet.write(0, 3, 'url')
+
 
 search_item = input("구매하려는 물건을 입력하시오 : ")
 find_item = Junggonara(search_item, 10, worksheet)

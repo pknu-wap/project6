@@ -7,10 +7,7 @@ import pandas as pd
 def get_info(item):
     res_lis = []
     page = 0
-    item = item.encode('unicode_escape')
-    item = str(item)[2:-1].replace('\\\\', '%')
     url = 'http://corners.auction.co.kr/corner/UsedMarketList.aspx?keyword=' + item
-    print(url)
     html = requests.get(url).text
     bsobj = BeautifulSoup(html, 'html.parser')
     try:

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>나는야 짠돌이</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+
+     .title {
+        display: block;
+        text-align: center;
+        background-color: rgb(68 ,114, 196);
+        color: white;
+      }
+
+      .search {
+        display: block;
+        text-align: center;
+      }
+
+      input {
+        width: 1000px;
+        height: 30px;
+        vertical-align: middle;
+        background-color: rgb(231, 230, 230);
+      }
+
+      #search_button {
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+        font-size: 1px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title"><a href="main_page.html" style="color: white">나는야 짠돌이</a></h1> <!--이미지 삽입-->
+    <span class="search"><input id=text type="text" title="검색어 입력" placeholder="검색어 입력" onkeydown="enterSearch()"><button id="search_button" type="button" onclick="myFunction()"><img src="search_button.png" style="width: 80px"></a></button></span>
+    <script type="text/javascript">
+      function enterSearch(){
+        if(event.keyCode == 13){
+          myFunction();
+        }
+      }
+      function myFunction(){
+        var x = document.getElementById("text").value;
+        window.location.href = "http://127.0.0.1/JJan/search_page.html";
+      }
+    </script>
+  </body>
+</html>

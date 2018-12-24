@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style media="screen">
+        table {
+          margin: 0 auto;
+          text-align: center;
+          border-collapse: collapse;
+          border: 1px solid #d4d4d4;
+        }
+
+        tr:nth-child(even) {
+          background: #d4d4d4;
+        }
+
+        th, td {
+          padding: 10px 30px;
+        }
+
+        th {
+          border-bottom: 1px solid #d4d4d4;
+        }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+      $.ajax({
+          url: 'junggo.csv',
+          type: 'post',
+          dataType: 'html',
+        }).done(successFunction);
+    });
+
+    function successFunction(data) {
+      var allRows = data.split(/\r?\n|\r/);
+      var table = '<table>';
+      for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
+        if (singleRow === 0) {
+          table += '<thead>';
+          table += '<tr>';
+        } else {
+          table += '<tr>';
+        }
+        var rowCells = allRows[singleRow].split(',');
+        for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
+          if (singleRow === 0) {
+            table += '<th>';
+            table += rowCells[rowCell];
+            table += '</th>';
+          } else {
+            table += '<td>';
+            table += rowCells[rowCell];
+            table += '</td>';
+          }
+        }
+        if (singleRow === 0) {
+          table += '</tr>';
+          table += '</thead>';
+          table += '<tbody>';
+        } else {
+          table += '</tr>';
+        }
+      }
+      table += '</tbody>';
+      table += '</table>';
+      $('body').append(table);
+    }
+    </script>
+  </body>
+</html>

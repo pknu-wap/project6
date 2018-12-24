@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f13a4de3-0932-498d-947b-6a9d8b3efdd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market/naver/beautifulsoup/junggo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Market/junggo.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Market/junggonara.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/naver/beautifulsoup/junggo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Market/naver/beautifulsoup/junggo.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,14 +34,45 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1098012012">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="52" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="52" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-972">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="122">
+              <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -62,11 +92,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="279" />
-    <option name="y" value="111" />
-    <option name="width" value="1515" />
-    <option name="height" value="870" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -162,14 +191,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="186" y="74" width="1010" height="580" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24974306" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19365498" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295964" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -187,10 +217,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_project6-AWS.zip/project6-AWS/Market/naver/beautifulsoup/junggonara.py" />
+    <entry file="file://$PROJECT_DIR$/Market/naver/beautifulsoup/hello.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_project6-AWS.zip/project6-AWS/auction-janteor crawling/crawlling test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1778" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-972">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="122">
+          <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

@@ -1,8 +1,12 @@
+#!C:\Users\김혜성\AppData\Local\Programs\Python\Python37-32/Python
+print("content-type:text/html; charset=UTF-8\n")
+
 import requests
 from bs4 import BeautifulSoup
 import xlwt
 from urllib.parse import urljoin
-
+from flask import Flask
+app = Flask(__name__)
 
 class Junggonara:
     def __init__(self, query, end_page, worksheet):
@@ -54,6 +58,7 @@ class Junggonara:
                 self.worksheet.write(20 * i + idx, 3, article_url)
                 idx += 1
 
+
 list_url = 'https://m.cafe.naver.com/ArticleSearchList.nhn'
 headers = {
     'Referer': 'https://m.cafe.naver.com/joonggonara',
@@ -65,8 +70,15 @@ worksheet.write(0, 1, '가격')
 worksheet.write(0, 2, '올린 시간')
 worksheet.write(0, 3, 'url')
 
+f = open("main_page.html", 'r',encoding = "UTF-8")
+data = f.read()
+print(data)
+f.close()
 
-search_item = input("구매하려는 물건을 입력하시오 : ")
+@app.route('/main_page')
+def index():
+    search_item = request.form['x']
+
 find_item = Junggonara(search_item, 10, worksheet)
 find_item.crawling()
 workbook.save('junggo.csv')

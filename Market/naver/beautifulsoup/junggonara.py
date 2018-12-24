@@ -49,6 +49,7 @@ class Junggonara:
                 article_url = urljoin(list_url, link_url)
                 html2 = requests.get(article_url, headers=headers).text
                 soup2 = BeautifulSoup(html2, 'html.parser')
+                print(soup2)
                 self.paste_to_csv(i, idx, 1, soup2.select('.price'))
                 self.paste_to_csv(i, idx, 2, soup2.select('.board_time span'))
                 idx += 1

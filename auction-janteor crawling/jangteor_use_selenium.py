@@ -24,6 +24,9 @@ def get_info(item):
     if(brow == 5):
         driver = webdriver.Safari(path)
     
+    item = item.encode('unicode_escape')
+    item = str(item)[2:-1].replace('\\\\', '%')
+    
     driver.get('http://corners.auction.co.kr/corner/UsedMarketList.aspx' + '?keyword=' + item)
     html = driver.page_source
     try: #'더 보기'가 있다면 모든 '더 보기' 클릭

@@ -18,7 +18,7 @@ def get_info2(item):
     except:
         max_page_max = 1
     
-    for ind in range(0,max_page_max):
+    for ind in range(0,int(max_page_max)):
         url = 'http://corners.auction.co.kr/corner/UsedMarketList.aspx?keyword=' + item +'&page=' + '{0}'.format(page)
         html = requests.get(url).text
         bsobj = BeautifulSoup(html, 'html.parser')

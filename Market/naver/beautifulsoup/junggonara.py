@@ -5,10 +5,11 @@ from urllib.parse import urljoin
 
 
 class Junggonara:
-    def __init__(self, query, end_page, worksheet):
+    def __init__(self, query, end_page, worksheet, workbook):
         self.query = query
         self.worksheet = worksheet
         self.end_page = end_page
+        self.workbook = workbook
 
     def get_params(self):
         params = {
@@ -49,23 +50,25 @@ class Junggonara:
                 article_url = urljoin(list_url, link_url)
                 html2 = requests.get(article_url, headers=headers).text
                 soup2 = BeautifulSoup(html2, 'html.parser')
-                print(soup2)
                 self.paste_to_csv(i, idx, 1, soup2.select('.price'))
                 self.paste_to_csv(i, idx, 2, soup2.select('.board_time span'))
                 idx += 1
+        self.workbook.save('junggo.csv')
 
 
 list_url = 'https://m.cafe.naver.com/ArticleSearchList.nhn'
 headers = {
     'Referer': 'https://m.cafe.naver.com/joonggonara',
 }
-workbook = xlwt.Workbook(encoding='utf-8')
-worksheet = workbook.add_sheet('중고나라')
-worksheet.write(0, 0, '글 제목')
-worksheet.write(0, 1, '가격')
-worksheet.write(0, 2, '올린 시간')
 
-search_item = input("구매하려는 물건을 입력하시오 : ")
-find_item = Junggonara(search_item, 10, worksheet)
-find_item.crawling()
-workbook.save('junggo.csv')
+def crawl_start():
+    workbook = xlwt.Workbook(encoding='utf-8')
+    worksheet = workbook.add_sheet('중고나라')
+    worksheet.write(0, 0, '글 제목')
+    worksheet.write(0, 1, '가격')
+    worksheet.write(0, 2, '올린 시간')
+
+    search_item = input("구매하려는 물건을 입력하시오 : ")
+    find_item = Junggonara(search_item, 10, worksheet, workbook)
+    find_item.crawling()
+

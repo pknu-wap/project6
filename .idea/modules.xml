@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/auction-janteor crawling/.idea/auction-janteor crawling.iml" filepath="$USER_HOME$/auction-janteor crawling/.idea/auction-janteor crawling.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/project6.iml" filepath="$PROJECT_DIR$/.idea/project6.iml" />
+      <module fileurl="file://$USER_HOME$/연동/.idea/연동.iml" filepath="$USER_HOME$/연동/.idea/연동.iml" />
     </modules>
   </component>
 </project>

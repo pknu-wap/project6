@@ -37,8 +37,9 @@
     </style>
   </head>
   <body>
-    <h1 class="title"><a href="main_page.html" style="color: white">나는야 짠돌이</a></h1> <!--이미지 삽입-->
-    <span class="search"><input id=text type="text" title="검색어 입력" placeholder="검색어 입력" onkeydown="enterSearch()"><button id="search_button" type="button" onclick="myFunction()"><img src="search_button.png" style="width: 80px"></a></button></span>
+    <form action="/search" method="POST">
+    <h1 class="title"><a href="./flask_server.py" style="color: white">나는야 짠돌이</a></h1>
+    <span class="search"><input id=text name="item" type="text" title="검색어 입력" placeholder="검색어 입력" onkeydown="enterSearch()"><button id="search_button" type="button" onclick="myFunction()"><img src="search_button.png" style="width: 80px"></a></button></span>
     <script type="text/javascript">
       function enterSearch(){
         if(event.keyCode == 13){
@@ -47,8 +48,9 @@
       }
       function myFunction(){
         var x = document.getElementById("text").value;
-        window.location.href = "http://127.0.0.1/JJan/search_page.html";
+        window.location.href = "http://127.0.0.1:5000/search_page.html";
       }
     </script>
+    </form>
   </body>
 </html>

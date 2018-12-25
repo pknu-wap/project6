@@ -37,11 +37,20 @@
     </style>
   </head>
   <body>
-  <h1 class="title"><a href="flask_server.py" style="color: white">나는야 짠돌이</a></h1>
-  <span class="search"><input type="text" title="검색어 입력"><button id="search_button" type="button"><a href="search_page.html"><img src="search_button.png" style="width: 80px"></a></button></span>
-  <h3 style="text-align: right; color: black"><a href="#">최신순</a> | <a href="#">가격순</a></h3>
-  <div align="center">
-    <iframe src="templates/iframe_auction.html" width="1550" height="2000" style="display: block; align: center; border: none;"></iframe>
-  </div>
+    <form action="/search" method="post">
+    <h1 class="title"><a href="./flask_server.py" style="color: white">나는야 짠돌이</a></h1>
+    <span class="search"><input id=text name="item" type="text" title="검색어 입력" placeholder="검색어 입력" onkeydown="enterSearch()"><button id="search_button" type="submit" onclick="myFunction()"><img src="search_button.png" style="width: 80px"></a></button></span>
+    <script type="text/javascript">
+      function enterSearch(){
+        if(event.keyCode == 13){
+          myFunction();
+        }
+      }
+      function myFunction(){
+        var x = document.getElementById("text").value;
+        window.location.href = "http://127.0.0.1:5000/search_page.html";
+      }
+    </script>
+    </form>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +39,7 @@
   <body>
     <form action="/search" method="post">
     <h1 class="title"><a href="./flask_server.py" style="color: white">나는야 짠돌이</a></h1>
-    <span class="search"><input id=text name="item" type="text" title="검색어 입력" placeholder="검색어 입력" onkeydown="enterSearch()"><button id="search_button" type="submit" onclick="myFunction()"><img src="search_button.png" style="width: 80px"></a></button></span>
+    <span class="search"><input id=text name="item" type="text" title="검색어 입력" placeholder="검색어 입력" onkeydown="enterSearch()"><button id="search_button" type="submit" onclick="myFunction()"><img src="searchbutton.png" style="width: 80px"></a></button></span>
     <script type="text/javascript">
       function enterSearch(){
         if(event.keyCode == 13){
@@ -47,7 +47,7 @@
         }
       }
       function myFunction(){
-        var x = document.getElementById("text").value;
+        var item = document.getElementById("text").value;
         window.location.href = "http://127.0.0.1:5000/search_page.html";
       }
     </script>

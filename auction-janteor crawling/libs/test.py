@@ -1,6 +1,6 @@
 #import jangteor_use_selenium as sele
 import jangteor_bs4 as bs
+item = ''
+#sele.getinfo(item)
 
-#sele.start()
-
-bs.start2()
+bs.get_info2(item)

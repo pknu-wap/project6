@@ -49,8 +49,7 @@ headers = {
     'Referer': 'https://m.cafe.naver.com/joonggonara',
 }
 
-def crawl_start():
-    search_item = input("구매하려는 물건을 입력하시오 : ")
+def crawl_start(search_item):
     find_item = Junggonara(search_item, 10)
     find_item.crawling()
 

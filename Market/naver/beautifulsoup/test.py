@@ -1,3 +1,4 @@
 import junggonara as jg
 
-jg.crawl_start()
+item = ''
+jg.crawl_start(item)

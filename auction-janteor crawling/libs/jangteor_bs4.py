@@ -38,10 +38,5 @@ def get_info2(item):
     jangteor = pd.DataFrame(res_lis)
     jangteor.to_csv('jangteor_crawling2.csv', mode='w', index=False)
 
-def start2():
-    print('옥션 중고장터 크롤러입니다.')
-    item = input('검색할 물품을 입력하세요: ')
-    get_info2(item)
-
 if __name__ == '__main__':
     get_info2(sys.argv[1])

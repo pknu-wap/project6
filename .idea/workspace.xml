@@ -4,6 +4,10 @@
     <list default="true" id="f13a4de3-0932-498d-947b-6a9d8b3efdd7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/naver/beautifulsoup/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/naver/beautifulsoup/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_bs4.py" beforeDir="false" afterPath="$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_bs4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_use_selenium.py" beforeDir="false" afterPath="$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_use_selenium.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auction-janteor crawling/libs/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/auction-janteor crawling/libs/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_bs4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+            <state relative-caret-position="687">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#64#93#0" expanded="true" />
               </folding>
@@ -25,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_use_selenium.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="70" column="12" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+            <state relative-caret-position="1344">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="e#99#128#0" expanded="true" />
               </folding>
@@ -40,17 +44,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="38">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+            <state relative-caret-position="334">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -62,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/Market/naver/beautifulsoup/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -91,19 +95,19 @@
         <option value="$PROJECT_DIR$/auction-janteor crawling/jangteor_use_selenium.py" />
         <option value="$PROJECT_DIR$/auction-janteor crawling/test_for_module.py" />
         <option value="$PROJECT_DIR$/auction-janteor crawling/flask_test/test.py" />
-        <option value="$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_use_selenium.py" />
-        <option value="$PROJECT_DIR$/auction-janteor crawling/libs/test.py" />
-        <option value="$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_bs4.py" />
         <option value="$PROJECT_DIR$/auction-janteor crawling/libs/flask.py" />
-        <option value="$PROJECT_DIR$/Market/naver/beautifulsoup/test.py" />
         <option value="$PROJECT_DIR$/auction-janteor crawling/libs/test_for_s.py" />
+        <option value="$PROJECT_DIR$/auction-janteor crawling/libs/test.py" />
+        <option value="$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_use_selenium.py" />
+        <option value="$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_bs4.py" />
         <option value="$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py" />
+        <option value="$PROJECT_DIR$/Market/naver/beautifulsoup/test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="960" />
-    <option name="height" value="1033" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -318,8 +322,8 @@
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4950495" visible="true" weight="0.19365498" />
-      <window_info id="Structure" order="1" sideWeight="0.5049505" side_tool="true" visible="true" weight="0.19365498" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4936351" visible="true" weight="0.19365498" />
+      <window_info id="Structure" order="1" sideWeight="0.50636494" side_tool="true" visible="true" weight="0.19365498" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
@@ -361,59 +365,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/test_for_s.py" />
+    <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_crawling.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Market/naver/beautifulsoup/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_bs4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        <state relative-caret-position="687">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#64#93#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/test_for_s.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_use_selenium.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="70" column="12" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+        <state relative-caret-position="1344">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="e#99#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auction-janteor crawling/libs/jangteor_crawling.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Market/naver/beautifulsoup/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

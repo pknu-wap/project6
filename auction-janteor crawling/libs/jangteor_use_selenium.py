@@ -77,17 +77,6 @@ def get_info(item, brow, f_name, f_path):
     jangteor = pd.DataFrame(res_lis)
     jangteor.to_csv('jangteor_crawling.csv', mode='w', index=False)
 
-def start():
-    print('옥션 중고장터 크롤러입니다.')
-    item = input('검색할 물품을 입력하세요: ')
-    brow = int(input('사용할 브라우저를 입력해주세요(1. Chrome, 2.Firefox, 3.IE, 4.Opera, 5.Safari): '))
-    f_name = input('사용자 파일명을 입력해주세요(웹드라이버의 경로가 바뀌었다면 0을 입력해주세요): ')
-    f_path = ''
-    if(f_name == '0'):
-        f_path = input('경로를 입력해주세요: ')
-    get_info(item, brow, f_name, f_path)
-
-
 if __name__ == '__main__':
     brow = sys.argv[2]
     f_name = sys.argv[3]

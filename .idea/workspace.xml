@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f13a4de3-0932-498d-947b-6a9d8b3efdd7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/flask.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/연동/search_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/연동/templates/iframe_auction.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/연동/templates/main_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/연동/templates/search_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py" beforeDir="false" afterPath="$PROJECT_DIR$/Market/naver/beautifulsoup/junggonara.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flas.py" beforeDir="false" afterPath="$PROJECT_DIR$/flas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/iframeauction.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/iframeauction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/searchpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/searchpage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="342">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -43,9 +43,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-5" />
-    <option name="y" value="102" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-83" />
+    <option name="y" value="77" />
     <option name="width" value="980" />
     <option name="height" value="805" />
   </component>
@@ -148,7 +148,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="82" width="784" height="644" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.19365498" />
@@ -222,8 +222,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="342">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

@@ -37,9 +37,9 @@
     </style>
   </head>
   <body>
-    <form action="/search" method="post">
+    <form action="/search_page" method="post">
     <h1 class="title"><a href="./flask_server.py" style="color: white">나는야 짠돌이</a></h1>
-    <span class="search"><input id=text name="item" type="text" title="검색어 입력" placeholder="검색어 입력" onkeydown="enterSearch()"><button id="search_button" type="submit" onclick="myFunction()"><img src="searchbutton.png" style="width: 80px"></a></button></span>
+    <span class="search"><input id=text name="item" type="text" title="검색어 입력" placeholder="검색어 입력" onkeydown="enterSearch()"><button id="searchbutton" type="submit" onclick="myFunction()"><img src="search_button.png" style="width: 80px"></a></button></span>
     <script type="text/javascript">
       function enterSearch(){
         if(event.keyCode == 13){

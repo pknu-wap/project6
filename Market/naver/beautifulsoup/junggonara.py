@@ -36,6 +36,7 @@ class Junggonara:
             idx += 1
 
     def crawling(self):
+        res_lis = []
         for i in range(self.end_page):
             params = self.get_params()
             params['search.page'] = i + 1
@@ -51,8 +52,14 @@ class Junggonara:
                 soup2 = BeautifulSoup(html2, 'html.parser')
                 self.paste_to_csv(i, idx, 1, soup2.select('.price'))
                 self.paste_to_csv(i, idx, 2, soup2.select('.board_time span'))
+                #self.worksheet.write(20 * i + idx, 3, article_url)
                 self.worksheet.write(20 * i + idx, 3, article_url)
                 idx += 1
+                    del_fee = '무료 배송'
+                res_lis.append({'price' : soup2.select('.price'), 'span' : soup2.select('.board_time span')})
+        Junggonara = pd.DataFrame(res_lis)
+        Junggonara.to_csv('tjunggo.csv', mode='w', index=False)
+
 
 list_url = 'https://m.cafe.naver.com/ArticleSearchList.nhn'
 headers = {

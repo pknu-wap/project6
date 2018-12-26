@@ -6,6 +6,7 @@ import pandas as pd
 import sys
 
 def get_info2(item):
+    print('crawling')
     res_lis = []
     page = 0
     url = 'http://corners.auction.co.kr/corner/UsedMarketList.aspx?keyword=' + item
@@ -17,7 +18,7 @@ def get_info2(item):
         max_page_max = max_page_number[1]
     except:
         max_page_max = 1
-    
+
     for ind in range(0,int(max_page_max)):
         url = 'http://corners.auction.co.kr/corner/UsedMarketList.aspx?keyword=' + item +'&page=' + '{0}'.format(page)
         html = requests.get(url).text
@@ -34,7 +35,7 @@ def get_info2(item):
                 del_fee = div.find('div', {'class':'icon ic_delivery'}).text
             except:
                 del_fee = '무료 배송'
-            res_lis.append({'title':title, 'price':price, 'delivery fee':del_fee, 'url':url_item})    
+            res_lis.append({'title':title, 'price':price, 'delivery fee':del_fee, 'url':url_item})
     jangteor = pd.DataFrame(res_lis)
     jangteor.to_csv('jangteor_crawling2.csv', mode='w', index=False)
 

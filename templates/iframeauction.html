@@ -45,12 +45,14 @@
         } else {
           table += '<tr>';
         }
-        var rowCells = allRows[singleRow].split(',');
+        var diff=",";
+        var rowCells = allRows[singleRow].split(diff);
         for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
           if (singleRow === 0) {
             table += '<th>';
             table += rowCells[rowCell];
             table += '</th>';
+            diff="\",";
           } else {
             table += '<td>';
             table += rowCells[rowCell];
